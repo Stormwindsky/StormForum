@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum-Blog Template | Stormwindsky</title>
+    <style>
+        /* CSS: Modern GitHub-style UI */
+        :root {
+            --primary: #0969da;
+            --border: #d0d7de;
+            --bg: #f6f8fa;
+            --card: #ffffff;
+            --text: #24292f;
+            --muted: #57606a;
+        }
+
+        /* Dark mode support for the container */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d1117;
+                --card: #161b22;
+                --text: #c9d1d9;
+                --border: #30363d;
+                --muted: #8b949e;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            background-color: var(--bg);
+            color: var(--text);
+            transition: background 0.3s ease;
+        }
+
+        header { text-align: center; margin-bottom: 3rem; }
+        .subtitle { color: var(--muted); font-size: 1.1rem; }
+
+        .content-card {
+            background: var(--card);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .giscus-section {
+            margin-top: 3rem;
+            min-height: 200px;
+        }
+
+        footer {
+            margin-top: 5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .license-badge {
+            display: inline-block;
+            border: 1px solid var(--border);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Forum-Blog Template</h1>
+        <p class="subtitle">A static discussion space powered by GitHub</p>
+    </header>
+
+    <main class="content-card">
+        <article>
+            <h2>Hello World!</h2>
+            <p>Welcome to this MIT-0 licensed template. This setup uses <strong>GitHub Discussions</strong> as a backend via Giscus. Every page on this site automatically generates a corresponding discussion thread on GitHub.</p>
+            <p>To write your own post, simply replace the text in this <code>&lt;article&gt;</code> tag.</p>
+        </article>
+
+        <section class="giscus-section">
+            <script src="https://giscus.app/client.js"
+                data-repo="Stormwindsky/Forum-Blog-Template"
+                data-repo-id="R_kgDORWTtbg"
+                data-category="Announcements"
+                data-category-id="DIC_kwDORWTtbs4C3ABe"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="preferred_color_scheme"
+                data-lang="en"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <div class="license-badge">MIT-0 License</div>
+        <p>
+            Free to use without attribution.
+            <br>Built by <a href="https://github.com/Stormwindsky">Stormwindsky</a>.
+        </p>
+    </footer>
+
+</body>
+</html>
